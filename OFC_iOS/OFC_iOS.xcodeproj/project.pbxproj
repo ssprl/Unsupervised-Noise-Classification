@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		810DC2031F71681800CF8CAA /* libdlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 810DC2021F71681800CF8CAA /* libdlib.a */; };
+		810DC2061F716C1100CF8CAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810DC2051F716C1100CF8CAA /* AudioToolbox.framework */; };
+		810DC2081F716C1700CF8CAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810DC2071F716C1700CF8CAA /* AVFoundation.framework */; };
+		810DC20A1F716C1D00CF8CAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810DC2091F716C1D00CF8CAA /* Foundation.framework */; };
+		810DC20C1F716C3500CF8CAA /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810DC20B1F716C3500CF8CAA /* CoreAudio.framework */; };
+		811CAF212069886100754B1F /* SubbandFeatures.c in Sources */ = {isa = PBXBuildFile; fileRef = 811CAF202069886100754B1F /* SubbandFeatures.c */; };
+		81276B8F1F95644700206A13 /* MovingAverageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81276B8E1F95644700206A13 /* MovingAverageBuffer.m */; };
+		817230711F71863600BDD236 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810DC20D1F716C3B00CF8CAA /* Accelerate.framework */; };
+		817230BC1F71AA8D00BDD236 /* audioProcessing.c in Sources */ = {isa = PBXBuildFile; fileRef = 817230B01F71AA8D00BDD236 /* audioProcessing.c */; };
+		817230BD1F71AA8D00BDD236 /* EclidianDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817230B21F71AA8D00BDD236 /* EclidianDistance.cpp */; };
+		817230BE1F71AA8D00BDD236 /* Frameprocessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817230B41F71AA8D00BDD236 /* Frameprocessing.cpp */; };
+		817230BF1F71AA8D00BDD236 /* massEvaluation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817230B61F71AA8D00BDD236 /* massEvaluation.cpp */; };
+		817230C01F71AA8D00BDD236 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817230B81F71AA8D00BDD236 /* stdafx.cpp */; };
+		817230C11F71AA8D00BDD236 /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817230BA1F71AA8D00BDD236 /* utilities.cpp */; };
+		81C089931F829FC600A37514 /* UTD-logo_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C089921F829FC600A37514 /* UTD-logo_80.png */; };
+		81DD8C321FAAC6E200015676 /* UnsupervisedClassification.c in Sources */ = {isa = PBXBuildFile; fileRef = 81DD8C301FAAC6E200015676 /* UnsupervisedClassification.c */; };
+		AD36B6D61F04CFB500065D93 /* AdvancedSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B6D51F04CFB500065D93 /* AdvancedSettingsTableViewController.swift */; };
+		AD436BDC1F2B02080063D6E3 /* SPLBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = AD436BDA1F2B02080063D6E3 /* SPLBuffer.c */; };
+		AD4CFEC51EECAD9A00804684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CFEC41EECAD9A00804684 /* AppDelegate.swift */; };
+		AD4CFECA1EECAD9A00804684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4CFEC81EECAD9A00804684 /* Main.storyboard */; };
+		AD4CFECC1EECAD9A00804684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4CFECB1EECAD9A00804684 /* Assets.xcassets */; };
+		AD4CFECF1EECAD9A00804684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4CFECD1EECAD9A00804684 /* LaunchScreen.storyboard */; };
+		AD4CFEDA1EECAD9A00804684 /* SPP_Equalizer_UI_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CFED91EECAD9A00804684 /* SPP_Equalizer_UI_1Tests.swift */; };
+		AD4CFEE51EECAD9A00804684 /* SPP_Equalizer_UI_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CFEE41EECAD9A00804684 /* SPP_Equalizer_UI_1UITests.swift */; };
+		AD4CFEFA1EECB74F00804684 /* ic_launcher-web_58.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4CFEF61EECB74F00804684 /* ic_launcher-web_58.png */; };
+		AD4CFEFB1EECB74F00804684 /* ic_launcher-web_80.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4CFEF71EECB74F00804684 /* ic_launcher-web_80.png */; };
+		AD4CFEFC1EECB74F00804684 /* ic_launcher-web_120.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4CFEF81EECB74F00804684 /* ic_launcher-web_120.png */; };
+		AD4CFEFD1EECB74F00804684 /* ic_launcher-web.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4CFEF91EECB74F00804684 /* ic_launcher-web.png */; };
+		AD4CFEFF1EECB90400804684 /* ic_launcher-web_40.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4CFEFE1EECB90400804684 /* ic_launcher-web_40.png */; };
+		AD4FD4001EF777A3000A27D4 /* GMMParam.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD4FD3EB1EF777A3000A27D4 /* GMMParam.txt */; };
+		AD4FD4051EF777A3000A27D4 /* Timer.c in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD3F51EF777A3000A27D4 /* Timer.c */; };
+		AD4FD4061EF777A3000A27D4 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD3F71EF777A3000A27D4 /* TPCircularBuffer.c */; };
+		AD4FD4071EF777A3000A27D4 /* Transforms.c in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD3F91EF777A3000A27D4 /* Transforms.c */; };
+		AD55A1321F00B21D001D017C /* IosAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55A12F1F00B21D001D017C /* IosAudioController.m */; };
+		AD55A1381F00B8FE001D017C /* Settings.c in Sources */ = {isa = PBXBuildFile; fileRef = AD55A1371F00B8FE001D017C /* Settings.c */; };
+		AD55A13A1F00C39C001D017C /* AudioSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55A1391F00C39C001D017C /* AudioSettingsController.swift */; };
+		AD71929A1EEF58620038DE39 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7192991EEF58620038DE39 /* MainTableViewController.swift */; };
+		AD98A6181F13F8A300F8B3A2 /* FIRFilter.c in Sources */ = {isa = PBXBuildFile; fileRef = AD98A6161F13F8A300F8B3A2 /* FIRFilter.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD4CFED61EECAD9A00804684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD4CFEB91EECAD9A00804684 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD4CFEC01EECAD9A00804684;
+			remoteInfo = "SPP Equalizer UI 1";
+		};
+		AD4CFEE11EECAD9A00804684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD4CFEB91EECAD9A00804684 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD4CFEC01EECAD9A00804684;
+			remoteInfo = "SPP Equalizer UI 1";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		810DC2021F71681800CF8CAA /* libdlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdlib.a; path = ../lib/libdlib.a; sourceTree = "<group>"; };
+		810DC2051F716C1100CF8CAA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		810DC2071F716C1700CF8CAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		810DC2091F716C1D00CF8CAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		810DC20B1F716C3500CF8CAA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		810DC20D1F716C3B00CF8CAA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		810DC20F1F716C8400CF8CAA /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		811CAF1F2069885100754B1F /* SubbandFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubbandFeatures.h; sourceTree = "<group>"; };
+		811CAF202069886100754B1F /* SubbandFeatures.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SubbandFeatures.c; sourceTree = "<group>"; };
+		81276B8E1F95644700206A13 /* MovingAverageBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovingAverageBuffer.m; sourceTree = "<group>"; };
+		81276B901F95645700206A13 /* MovingAverageBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovingAverageBuffer.h; sourceTree = "<group>"; };
+		817230B01F71AA8D00BDD236 /* audioProcessing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = audioProcessing.c; sourceTree = "<group>"; };
+		817230B11F71AA8D00BDD236 /* audioProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioProcessing.h; sourceTree = "<group>"; };
+		817230B21F71AA8D00BDD236 /* EclidianDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EclidianDistance.cpp; sourceTree = "<group>"; };
+		817230B31F71AA8D00BDD236 /* EclidianDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EclidianDistance.h; sourceTree = "<group>"; };
+		817230B41F71AA8D00BDD236 /* Frameprocessing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Frameprocessing.cpp; sourceTree = "<group>"; };
+		817230B51F71AA8D00BDD236 /* Frameprocessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frameprocessing.h; sourceTree = "<group>"; };
+		817230B61F71AA8D00BDD236 /* massEvaluation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = massEvaluation.cpp; sourceTree = "<group>"; };
+		817230B71F71AA8D00BDD236 /* massEvaluation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = massEvaluation.h; sourceTree = "<group>"; };
+		817230B81F71AA8D00BDD236 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		817230B91F71AA8D00BDD236 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		817230BA1F71AA8D00BDD236 /* utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utilities.cpp; sourceTree = "<group>"; };
+		817230BB1F71AA8D00BDD236 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		8175FE5720676D7A00EEDA2B /* OFC_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OFC_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		81C089921F829FC600A37514 /* UTD-logo_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UTD-logo_80.png"; sourceTree = "<group>"; };
+		81DD8C301FAAC6E200015676 /* UnsupervisedClassification.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UnsupervisedClassification.c; sourceTree = "<group>"; };
+		81DD8C311FAAC6E200015676 /* UnsupervisedClassification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnsupervisedClassification.h; sourceTree = "<group>"; };
+		AD36B6D51F04CFB500065D93 /* AdvancedSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AdvancedSettingsTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD436BDA1F2B02080063D6E3 /* SPLBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = SPLBuffer.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		AD436BDB1F2B02080063D6E3 /* SPLBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SPLBuffer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AD4CFEC11EECAD9A00804684 /* OFC_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OFC_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4CFEC41EECAD9A00804684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD4CFEC91EECAD9A00804684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD4CFECB1EECAD9A00804684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD4CFECE1EECAD9A00804684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD4CFED01EECAD9A00804684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4CFED51EECAD9A00804684 /* OFC_iOS 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OFC_iOS 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4CFED91EECAD9A00804684 /* SPP_Equalizer_UI_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPP_Equalizer_UI_1Tests.swift; sourceTree = "<group>"; };
+		AD4CFEDB1EECAD9A00804684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4CFEE01EECAD9A00804684 /* OFC_iOS 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OFC_iOS 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4CFEE41EECAD9A00804684 /* SPP_Equalizer_UI_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPP_Equalizer_UI_1UITests.swift; sourceTree = "<group>"; };
+		AD4CFEE61EECAD9A00804684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4CFEF61EECB74F00804684 /* ic_launcher-web_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_launcher-web_58.png"; sourceTree = "<group>"; };
+		AD4CFEF71EECB74F00804684 /* ic_launcher-web_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_launcher-web_80.png"; sourceTree = "<group>"; };
+		AD4CFEF81EECB74F00804684 /* ic_launcher-web_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_launcher-web_120.png"; sourceTree = "<group>"; };
+		AD4CFEF91EECB74F00804684 /* ic_launcher-web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_launcher-web.png"; sourceTree = "<group>"; };
+		AD4CFEFE1EECB90400804684 /* ic_launcher-web_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_launcher-web_40.png"; sourceTree = "<group>"; };
+		AD4FD3EB1EF777A3000A27D4 /* GMMParam.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GMMParam.txt; sourceTree = "<group>"; };
+		AD4FD3F51EF777A3000A27D4 /* Timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Timer.c; sourceTree = "<group>"; };
+		AD4FD3F61EF777A3000A27D4 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		AD4FD3F71EF777A3000A27D4 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		AD4FD3F81EF777A3000A27D4 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TPCircularBuffer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AD4FD3F91EF777A3000A27D4 /* Transforms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Transforms.c; sourceTree = "<group>"; };
+		AD4FD3FA1EF777A3000A27D4 /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transforms.h; sourceTree = "<group>"; };
+		AD55A12E1F00B21D001D017C /* IosAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosAudioController.h; sourceTree = "<group>"; };
+		AD55A12F1F00B21D001D017C /* IosAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = IosAudioController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AD55A1361F00B533001D017C /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Settings.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AD55A1371F00B8FE001D017C /* Settings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = Settings.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		AD55A1391F00C39C001D017C /* AudioSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AudioSettingsController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD7192991EEF58620038DE39 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AD98A6151F13F8A300F8B3A2 /* filterCoefficients.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterCoefficients.h; sourceTree = "<group>"; };
+		AD98A6161F13F8A300F8B3A2 /* FIRFilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FIRFilter.c; sourceTree = "<group>"; };
+		AD98A6171F13F8A300F8B3A2 /* FIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRFilter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD4CFEBE1EECAD9A00804684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817230711F71863600BDD236 /* Accelerate.framework in Frameworks */,
+				810DC20C1F716C3500CF8CAA /* CoreAudio.framework in Frameworks */,
+				810DC20A1F716C1D00CF8CAA /* Foundation.framework in Frameworks */,
+				810DC2081F716C1700CF8CAA /* AVFoundation.framework in Frameworks */,
+				810DC2061F716C1100CF8CAA /* AudioToolbox.framework in Frameworks */,
+				810DC2031F71681800CF8CAA /* libdlib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4CFED21EECAD9A00804684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4CFEDD1EECAD9A00804684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		810DC2041F716C1100CF8CAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				810DC20F1F716C8400CF8CAA /* AudioUnit.framework */,
+				810DC20D1F716C3B00CF8CAA /* Accelerate.framework */,
+				810DC20B1F716C3500CF8CAA /* CoreAudio.framework */,
+				810DC2091F716C1D00CF8CAA /* Foundation.framework */,
+				810DC2071F716C1700CF8CAA /* AVFoundation.framework */,
+				810DC2051F716C1100CF8CAA /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		811CAF2220699AB600754B1F /* FFTTransform native codes */ = {
+			isa = PBXGroup;
+			children = (
+				AD4FD3F91EF777A3000A27D4 /* Transforms.c */,
+				AD98A6151F13F8A300F8B3A2 /* filterCoefficients.h */,
+				AD98A6171F13F8A300F8B3A2 /* FIRFilter.h */,
+				AD98A6161F13F8A300F8B3A2 /* FIRFilter.c */,
+				AD4FD3FA1EF777A3000A27D4 /* Transforms.h */,
+				AD436BDA1F2B02080063D6E3 /* SPLBuffer.c */,
+				AD436BDB1F2B02080063D6E3 /* SPLBuffer.h */,
+			);
+			path = "FFTTransform native codes";
+			sourceTree = "<group>";
+		};
+		811CAF2320699AF600754B1F /* Main native codes */ = {
+			isa = PBXGroup;
+			children = (
+				817230B11F71AA8D00BDD236 /* audioProcessing.h */,
+				817230B01F71AA8D00BDD236 /* audioProcessing.c */,
+				AD4FD3F51EF777A3000A27D4 /* Timer.c */,
+				AD4FD3F61EF777A3000A27D4 /* Timer.h */,
+			);
+			path = "Main native codes";
+			sourceTree = "<group>";
+		};
+		817230731F719ED300BDD236 /* Clustering native codes */ = {
+			isa = PBXGroup;
+			children = (
+				817230B21F71AA8D00BDD236 /* EclidianDistance.cpp */,
+				817230B31F71AA8D00BDD236 /* EclidianDistance.h */,
+				817230B41F71AA8D00BDD236 /* Frameprocessing.cpp */,
+				817230B51F71AA8D00BDD236 /* Frameprocessing.h */,
+				817230B61F71AA8D00BDD236 /* massEvaluation.cpp */,
+				817230B71F71AA8D00BDD236 /* massEvaluation.h */,
+				817230B81F71AA8D00BDD236 /* stdafx.cpp */,
+				817230B91F71AA8D00BDD236 /* stdafx.h */,
+				817230BA1F71AA8D00BDD236 /* utilities.cpp */,
+				817230BB1F71AA8D00BDD236 /* utilities.h */,
+				81DD8C301FAAC6E200015676 /* UnsupervisedClassification.c */,
+				81DD8C311FAAC6E200015676 /* UnsupervisedClassification.h */,
+			);
+			name = "Clustering native codes";
+			sourceTree = "<group>";
+		};
+		817230741F719EE300BDD236 /* Subband features native codes */ = {
+			isa = PBXGroup;
+			children = (
+				811CAF1F2069885100754B1F /* SubbandFeatures.h */,
+				811CAF202069886100754B1F /* SubbandFeatures.c */,
+			);
+			name = "Subband features native codes";
+			sourceTree = "<group>";
+		};
+		AD4CFEB81EECAD9A00804684 = {
+			isa = PBXGroup;
+			children = (
+				AD4CFEC31EECAD9A00804684 /* OFC_iOS */,
+				AD4CFED81EECAD9A00804684 /* OFC_iOS 1Tests */,
+				AD4CFEE31EECAD9A00804684 /* OFC_iOS 1UITests */,
+				AD4CFEC21EECAD9A00804684 /* Products */,
+				810DC2041F716C1100CF8CAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD4CFEC21EECAD9A00804684 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CFEC11EECAD9A00804684 /* OFC_iOS.app */,
+				AD4CFED51EECAD9A00804684 /* OFC_iOS 1Tests.xctest */,
+				AD4CFEE01EECAD9A00804684 /* OFC_iOS 1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4CFEC31EECAD9A00804684 /* OFC_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8175FE5720676D7A00EEDA2B /* OFC_iOS-Bridging-Header.h */,
+				811CAF2320699AF600754B1F /* Main native codes */,
+				817230731F719ED300BDD236 /* Clustering native codes */,
+				817230741F719EE300BDD236 /* Subband features native codes */,
+				811CAF2220699AB600754B1F /* FFTTransform native codes */,
+				AD4CFEF31EECADD400804684 /* GUI (View) */,
+				AD4CFEF41EECADDA00804684 /* Classes */,
+				AD4CFEF51EECADE200804684 /* Supporting Files */,
+			);
+			path = OFC_iOS;
+			sourceTree = "<group>";
+		};
+		AD4CFED81EECAD9A00804684 /* OFC_iOS 1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CFED91EECAD9A00804684 /* SPP_Equalizer_UI_1Tests.swift */,
+				AD4CFEDB1EECAD9A00804684 /* Info.plist */,
+			);
+			path = "OFC_iOS 1Tests";
+			sourceTree = "<group>";
+		};
+		AD4CFEE31EECAD9A00804684 /* OFC_iOS 1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CFEE41EECAD9A00804684 /* SPP_Equalizer_UI_1UITests.swift */,
+				AD4CFEE61EECAD9A00804684 /* Info.plist */,
+			);
+			path = "OFC_iOS 1UITests";
+			sourceTree = "<group>";
+		};
+		AD4CFEF31EECADD400804684 /* GUI (View) */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CFEC81EECAD9A00804684 /* Main.storyboard */,
+				AD7192991EEF58620038DE39 /* MainTableViewController.swift */,
+				AD36B6D51F04CFB500065D93 /* AdvancedSettingsTableViewController.swift */,
+			);
+			name = "GUI (View)";
+			sourceTree = "<group>";
+		};
+		AD4CFEF41EECADDA00804684 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AD55A1391F00C39C001D017C /* AudioSettingsController.swift */,
+				AD55A12F1F00B21D001D017C /* IosAudioController.m */,
+				AD55A12E1F00B21D001D017C /* IosAudioController.h */,
+				AD55A1371F00B8FE001D017C /* Settings.c */,
+				AD55A1361F00B533001D017C /* Settings.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AD4CFEF51EECADE200804684 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81276B901F95645700206A13 /* MovingAverageBuffer.h */,
+				81276B8E1F95644700206A13 /* MovingAverageBuffer.m */,
+				810DC2021F71681800CF8CAA /* libdlib.a */,
+				AD4FD3F71EF777A3000A27D4 /* TPCircularBuffer.c */,
+				AD4FD3F81EF777A3000A27D4 /* TPCircularBuffer.h */,
+				AD4FD3EB1EF777A3000A27D4 /* GMMParam.txt */,
+				AD4CFEC41EECAD9A00804684 /* AppDelegate.swift */,
+				AD4CFECB1EECAD9A00804684 /* Assets.xcassets */,
+				81C089921F829FC600A37514 /* UTD-logo_80.png */,
+				AD4CFEFE1EECB90400804684 /* ic_launcher-web_40.png */,
+				AD4CFEF61EECB74F00804684 /* ic_launcher-web_58.png */,
+				AD4CFEF71EECB74F00804684 /* ic_launcher-web_80.png */,
+				AD4CFEF81EECB74F00804684 /* ic_launcher-web_120.png */,
+				AD4CFEF91EECB74F00804684 /* ic_launcher-web.png */,
+				AD4CFECD1EECAD9A00804684 /* LaunchScreen.storyboard */,
+				AD4CFED01EECAD9A00804684 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD4CFEC01EECAD9A00804684 /* OFC_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD4CFEE91EECAD9A00804684 /* Build configuration list for PBXNativeTarget "OFC_iOS" */;
+			buildPhases = (
+				AD4CFEBD1EECAD9A00804684 /* Sources */,
+				AD4CFEBE1EECAD9A00804684 /* Frameworks */,
+				AD4CFEBF1EECAD9A00804684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OFC_iOS;
+			productName = "SPP Equalizer UI 1";
+			productReference = AD4CFEC11EECAD9A00804684 /* OFC_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD4CFED41EECAD9A00804684 /* OFC_iOS 1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD4CFEEC1EECAD9A00804684 /* Build configuration list for PBXNativeTarget "OFC_iOS 1Tests" */;
+			buildPhases = (
+				AD4CFED11EECAD9A00804684 /* Sources */,
+				AD4CFED21EECAD9A00804684 /* Frameworks */,
+				AD4CFED31EECAD9A00804684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD4CFED71EECAD9A00804684 /* PBXTargetDependency */,
+			);
+			name = "OFC_iOS 1Tests";
+			productName = "SPP Equalizer UI 1Tests";
+			productReference = AD4CFED51EECAD9A00804684 /* OFC_iOS 1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD4CFEDF1EECAD9A00804684 /* OFC_iOS 1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD4CFEEF1EECAD9A00804684 /* Build configuration list for PBXNativeTarget "OFC_iOS 1UITests" */;
+			buildPhases = (
+				AD4CFEDC1EECAD9A00804684 /* Sources */,
+				AD4CFEDD1EECAD9A00804684 /* Frameworks */,
+				AD4CFEDE1EECAD9A00804684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD4CFEE21EECAD9A00804684 /* PBXTargetDependency */,
+			);
+			name = "OFC_iOS 1UITests";
+			productName = "SPP Equalizer UI 1UITests";
+			productReference = AD4CFEE01EECAD9A00804684 /* OFC_iOS 1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD4CFEB91EECAD9A00804684 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "UT Dallas";
+				TargetAttributes = {
+					AD4CFEC01EECAD9A00804684 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 99XC5GW6H9;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					AD4CFED41EECAD9A00804684 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 464C8V7VN3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD4CFEC01EECAD9A00804684;
+					};
+					AD4CFEDF1EECAD9A00804684 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 99XC5GW6H9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD4CFEC01EECAD9A00804684;
+					};
+				};
+			};
+			buildConfigurationList = AD4CFEBC1EECAD9A00804684 /* Build configuration list for PBXProject "OFC_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD4CFEB81EECAD9A00804684;
+			productRefGroup = AD4CFEC21EECAD9A00804684 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD4CFEC01EECAD9A00804684 /* OFC_iOS */,
+				AD4CFED41EECAD9A00804684 /* OFC_iOS 1Tests */,
+				AD4CFEDF1EECAD9A00804684 /* OFC_iOS 1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD4CFEBF1EECAD9A00804684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4CFECF1EECAD9A00804684 /* LaunchScreen.storyboard in Resources */,
+				AD4CFEFA1EECB74F00804684 /* ic_launcher-web_58.png in Resources */,
+				AD4CFEFD1EECB74F00804684 /* ic_launcher-web.png in Resources */,
+				AD4CFECC1EECAD9A00804684 /* Assets.xcassets in Resources */,
+				AD4CFEFF1EECB90400804684 /* ic_launcher-web_40.png in Resources */,
+				AD4CFECA1EECAD9A00804684 /* Main.storyboard in Resources */,
+				81C089931F829FC600A37514 /* UTD-logo_80.png in Resources */,
+				AD4FD4001EF777A3000A27D4 /* GMMParam.txt in Resources */,
+				AD4CFEFC1EECB74F00804684 /* ic_launcher-web_120.png in Resources */,
+				AD4CFEFB1EECB74F00804684 /* ic_launcher-web_80.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4CFED31EECAD9A00804684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4CFEDE1EECAD9A00804684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD4CFEBD1EECAD9A00804684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4FD4071EF777A3000A27D4 /* Transforms.c in Sources */,
+				AD55A1321F00B21D001D017C /* IosAudioController.m in Sources */,
+				817230C11F71AA8D00BDD236 /* utilities.cpp in Sources */,
+				AD98A6181F13F8A300F8B3A2 /* FIRFilter.c in Sources */,
+				AD71929A1EEF58620038DE39 /* MainTableViewController.swift in Sources */,
+				817230BE1F71AA8D00BDD236 /* Frameprocessing.cpp in Sources */,
+				817230BF1F71AA8D00BDD236 /* massEvaluation.cpp in Sources */,
+				AD4CFEC51EECAD9A00804684 /* AppDelegate.swift in Sources */,
+				AD4FD4061EF777A3000A27D4 /* TPCircularBuffer.c in Sources */,
+				AD4FD4051EF777A3000A27D4 /* Timer.c in Sources */,
+				817230BD1F71AA8D00BDD236 /* EclidianDistance.cpp in Sources */,
+				817230C01F71AA8D00BDD236 /* stdafx.cpp in Sources */,
+				81276B8F1F95644700206A13 /* MovingAverageBuffer.m in Sources */,
+				AD436BDC1F2B02080063D6E3 /* SPLBuffer.c in Sources */,
+				811CAF212069886100754B1F /* SubbandFeatures.c in Sources */,
+				817230BC1F71AA8D00BDD236 /* audioProcessing.c in Sources */,
+				AD55A1381F00B8FE001D017C /* Settings.c in Sources */,
+				AD36B6D61F04CFB500065D93 /* AdvancedSettingsTableViewController.swift in Sources */,
+				81DD8C321FAAC6E200015676 /* UnsupervisedClassification.c in Sources */,
+				AD55A13A1F00C39C001D017C /* AudioSettingsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4CFED11EECAD9A00804684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4CFEDA1EECAD9A00804684 /* SPP_Equalizer_UI_1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4CFEDC1EECAD9A00804684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4CFEE51EECAD9A00804684 /* SPP_Equalizer_UI_1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD4CFED71EECAD9A00804684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD4CFEC01EECAD9A00804684 /* OFC_iOS */;
+			targetProxy = AD4CFED61EECAD9A00804684 /* PBXContainerItemProxy */;
+		};
+		AD4CFEE21EECAD9A00804684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD4CFEC01EECAD9A00804684 /* OFC_iOS */;
+			targetProxy = AD4CFEE11EECAD9A00804684 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD4CFEC81EECAD9A00804684 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD4CFEC91EECAD9A00804684 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD4CFECD1EECAD9A00804684 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD4CFECE1EECAD9A00804684 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD4CFEE71EECAD9A00804684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD4CFEE81EECAD9A00804684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD4CFEEA1EECAD9A00804684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 99XC5GW6H9;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DLIB_USE_LAPACK,
+					DLIB_USE_BLAS,
+					NDEBUG,
+					DLIB_JPEG_SUPPORT,
+					DLIB_NO_GUI_SUPPORT,
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
+				INFOPLIST_FILE = OFC_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPP\\ Equalizer\\ UI\\ 1",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.utdallas.aac141430.OFC_iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OFC_iOS/OFC_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AD4CFEEB1EECAD9A00804684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 99XC5GW6H9;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DLIB_USE_LAPACK,
+					DLIB_USE_BLAS,
+					NDEBUG,
+					DLIB_JPEG_SUPPORT,
+					DLIB_NO_GUI_SUPPORT,
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
+				INFOPLIST_FILE = OFC_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPP\\ Equalizer\\ UI\\ 1",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.utdallas.aac141430.OFC_iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OFC_iOS/OFC_iOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AD4CFEED1EECAD9A00804684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 464C8V7VN3;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "SPP Equalizer UI 1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.utdallas.aac141430.SPP-Equalizer-UI-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPP Equalizer UI 1.app/SPP Equalizer UI 1";
+			};
+			name = Debug;
+		};
+		AD4CFEEE1EECAD9A00804684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 464C8V7VN3;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = "SPP Equalizer UI 1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.utdallas.aac141430.SPP-Equalizer-UI-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPP Equalizer UI 1.app/SPP Equalizer UI 1";
+			};
+			name = Release;
+		};
+		AD4CFEF01EECAD9A00804684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 99XC5GW6H9;
+				INFOPLIST_FILE = "SPP Equalizer UI 1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.utdallas.aac141430.SPP-Equalizer-UI-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "SPP Equalizer UI 1";
+			};
+			name = Debug;
+		};
+		AD4CFEF11EECAD9A00804684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 99XC5GW6H9;
+				INFOPLIST_FILE = "SPP Equalizer UI 1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.utdallas.aac141430.SPP-Equalizer-UI-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "SPP Equalizer UI 1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD4CFEBC1EECAD9A00804684 /* Build configuration list for PBXProject "OFC_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4CFEE71EECAD9A00804684 /* Debug */,
+				AD4CFEE81EECAD9A00804684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD4CFEE91EECAD9A00804684 /* Build configuration list for PBXNativeTarget "OFC_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4CFEEA1EECAD9A00804684 /* Debug */,
+				AD4CFEEB1EECAD9A00804684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD4CFEEC1EECAD9A00804684 /* Build configuration list for PBXNativeTarget "OFC_iOS 1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4CFEED1EECAD9A00804684 /* Debug */,
+				AD4CFEEE1EECAD9A00804684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD4CFEEF1EECAD9A00804684 /* Build configuration list for PBXNativeTarget "OFC_iOS 1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4CFEF01EECAD9A00804684 /* Debug */,
+				AD4CFEF11EECAD9A00804684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD4CFEB91EECAD9A00804684 /* Project object */;
+}
