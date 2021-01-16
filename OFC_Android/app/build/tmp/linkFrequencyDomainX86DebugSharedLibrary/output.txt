@@ -1,0 +1,4 @@
+See file:///Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/tmp/linkFrequencyDomainX86DebugSharedLibrary/output.txt for all output for linkFrequencyDomainX86DebugSharedLibrary.
+linking libFrequencyDomain.so successful.
+
+Finished linkFrequencyDomainX86DebugSharedLibrary, see full log file:///Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/tmp/linkFrequencyDomainX86DebugSharedLibrary/output.txt.

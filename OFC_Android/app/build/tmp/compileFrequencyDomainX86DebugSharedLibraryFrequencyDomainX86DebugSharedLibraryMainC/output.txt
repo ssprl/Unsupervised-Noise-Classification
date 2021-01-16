@@ -1,0 +1,21 @@
+See file:///Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/tmp/compileFrequencyDomainX86DebugSharedLibraryFrequencyDomainX86DebugSharedLibraryMainC/output.txt for all output for compileFrequencyDomainX86DebugSharedLibraryFrequencyDomainX86DebugSharedLibraryMainC.
+compiling Timer.c successful.
+
+compiling SpeechProcessing.c successful.
+
+compiling SubbandFeatures.c successful.
+
+compiling FIRFilter.c successful.
+
+compiling Transforms.c successful.
+
+compiling UnsupervisedClassification.c successful.
+/Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/src/main/jni/Clustering/UnsupervisedClassification.c: In function 'computeNoiseClassifier':
+/Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/src/main/jni/Clustering/UnsupervisedClassification.c:190:9: warning: implicit declaration of function 'log2' [-Wimplicit-function-declaration]
+         double minFading = exp(-log2(inParam->maxLimit));
+         ^
+/Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/src/main/jni/Clustering/UnsupervisedClassification.c:190:33: warning: incompatible implicit declaration of built-in function 'log2'
+         double minFading = exp(-log2(inParam->maxLimit));
+                                 ^
+
+Finished compileFrequencyDomainX86DebugSharedLibraryFrequencyDomainX86DebugSharedLibraryMainC, see full log file:///Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/tmp/compileFrequencyDomainX86DebugSharedLibraryFrequencyDomainX86DebugSharedLibraryMainC/output.txt.

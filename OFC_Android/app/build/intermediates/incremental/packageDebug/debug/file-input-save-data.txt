@@ -1,0 +1,23 @@
+#Internal package file, do not edit.
+#Wed Mar 28 21:22:12 CDT 2018
+2.base=/Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
+0.path=lib/armeabi-v7a/libFrequencyDomain.so
+2.baseType=DIRECTORY
+3.base=/Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
+2.set=NATIVE_RESOURCE
+1.path=lib/x86/libdlib.so
+4.base=/Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/intermediates/transforms/dexMerger/debug/0
+count=5
+2.path=lib/x86/libFrequencyDomain.so
+4.set=DEX
+3.path=lib/armeabi-v7a/libdlib.so
+3.baseType=DIRECTORY
+1.set=NATIVE_RESOURCE
+4.path=classes.dex
+1.baseType=DIRECTORY
+0.base=/Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
+0.baseType=DIRECTORY
+3.set=NATIVE_RESOURCE
+1.base=/Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
+4.baseType=DIRECTORY
+0.set=NATIVE_RESOURCE

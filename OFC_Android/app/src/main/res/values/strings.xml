@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Unsupervised Noise Classifier</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="startButton">Start</string>
+    <string name="stopButton">Stop</string>
+    <!-- <string name="readButton">Read File</string> -->
+    <string name="samplingFrequencyTextView">Sampling Frequency</string>
+    <string name="samplingFrequencyEditText">48000</string>
+    <string name="processingTime">Frame Processing Time:</string>
+    <string name="DecisionRate">Decision Rate (sec)</string>
+    <string name="DecisionRateVal">0.50</string>
+    <string name="smoothingBufferSize">2.0</string>
+    <string name="decisionRate">Decision Rate (in seconds)</string>
+    <string name="quietAdjustment">Quiet Adjustment</string>
+    <!-- <string name="playAudio">Play Audio</string> -->
+    <string name="HybridClassification">Hybrid Classification</string>
+    <string name="SavingClassificationData">Saving Classification Data</string>
+    <string name="storeFeatures">Saving Extracted Features</string>
+
+
+    <!-- <string name="LoadingButtVal">Hybrid Classification</string> -->
+    <!-- <string name="SavingButtVal">Saving clusters </string> -->
+    <string name="sigma">Sigma </string>
+    <string name="sigmaVal">2.0 </string>
+    <string name="fractionRej">Fraction Rejection</string>
+    <string name="fractionRejVal">0.01</string>
+    <string name="ChunkSize">#Decisions in Chunk</string>
+    <string name="ChunkSizeVal">10</string>
+
+    <string name="copyright">© 2018 SIP Lab, UT Dallas</string>
+    <string name="title_activity_2">Activity2</string>
+</resources>

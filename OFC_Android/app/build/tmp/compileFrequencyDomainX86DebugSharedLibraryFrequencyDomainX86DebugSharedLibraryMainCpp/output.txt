@@ -1,0 +1,16 @@
+See file:///Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/tmp/compileFrequencyDomainX86DebugSharedLibraryFrequencyDomainX86DebugSharedLibraryMainCpp/output.txt for all output for compileFrequencyDomainX86DebugSharedLibraryFrequencyDomainX86DebugSharedLibraryMainCpp.
+compiling utilities.cpp successful.
+
+compiling EclidianDistance.cpp successful.
+
+compiling stdafx.cpp successful.
+
+compiling SuperpoweredAndroidAudioIO.cpp successful.
+
+compiling massEvaluation.cpp successful.
+
+compiling FrequencyDomain.cpp successful.
+
+compiling Frameprocessing.cpp successful.
+
+Finished compileFrequencyDomainX86DebugSharedLibraryFrequencyDomainX86DebugSharedLibraryMainCpp, see full log file:///Users/nasim/Desktop/UserGuild-OFC-2018/OFC_FinalApps/OFC_Android/app/build/tmp/compileFrequencyDomainX86DebugSharedLibraryFrequencyDomainX86DebugSharedLibraryMainCpp/output.txt.
