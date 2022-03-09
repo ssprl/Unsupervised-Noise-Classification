@@ -10,7 +10,7 @@ You can find the paper for this GitHub repository: https://ieeexplore.ieee.org/a
 
 ## Audio-Video Demo
 
-- https://www.utdallas.edu/ssprl/files/Unsupervised-Classifier-Video.mp4?_=8
+- https://labs.utdallas.edu/ssprl/files/2020/09/17Unsupervised-Classifier-Video1.mp4
 
 ## Users Guides
 
